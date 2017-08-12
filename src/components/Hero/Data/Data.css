@@ -1,0 +1,23 @@
+.heroData {
+    border: 1px solid #F3AD19;
+    max-width:  140px;
+    width: 100%;
+    text-align: center;
+}
+.dataBox p {
+    margin: 0;
+    font-size: 18px;
+    font-family: serif;
+}
+.dataBox p:first-child {
+    margin-top: 10px;
+}
+.dataBox p:last-child {
+    margin-bottom: 10px;
+}
+.hr {
+    background: #F3AD19;
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+}

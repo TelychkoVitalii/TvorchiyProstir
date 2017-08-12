@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Hero from '../Hero/Hero';
 import Header from '../Header/Header';
 
 class App extends React.Component {
@@ -11,6 +12,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <Hero/>
                 <Header/>
             </div>
         )
