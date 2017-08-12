@@ -11,10 +11,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot -p",
-
     "build": "webpack",
     "serve": "serve build",
-
     "test": "jest",
     "test:watch": "jest --watch"
   },
