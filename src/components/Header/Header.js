@@ -15,7 +15,7 @@ class Header extends React.Component {
         const listItems = headerTitles.map((title, index) => 
             <li className={styles.listItem} key={index}>{title}</li>);
         return (
-            <div className={styles.headerWrapper}>
+            <div className={styles.headerRow}>
                 <ul className={styles.listItems}>{listItems}</ul>
             </div>
         )

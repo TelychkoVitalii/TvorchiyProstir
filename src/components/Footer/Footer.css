@@ -1,0 +1,24 @@
+.footerRow {
+    max-width: 79.36507936507936%; /* 100 / 1260 */
+    margin: 0 auto;
+    padding: 25px 0;
+    background-color: #edeae6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerTitle {
+    font-family: Just Another Hand,cursive;
+    font-size: 34px;
+    border-bottom: 2px solid #EDD46E;
+}
+.footerTitle span:first-child {
+    color: #74D4A5;
+}
+.footerTitle span:nth-child(2) {
+    color: #EDD46E;
+}
+.footerTitle span:last-child {
+    color: #EC7D42;
+}
