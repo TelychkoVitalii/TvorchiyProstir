@@ -12,7 +12,7 @@ class Hero extends React.Component {
 
     render() {
         return (
-            <div className={styles.hero}>
+            <div className={styles.heroRow}>
                 <Data/>
                 <Logo/>
                 <Socials/>

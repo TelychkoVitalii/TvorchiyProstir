@@ -1,12 +1,10 @@
 .heroLogo {
-    max-width:  140px;
+    max-width:  160px;
     width: 100%;
-    position: relative;
     display: flex;
     justify-content: center;
 }
 .imgLogo {
-    position: absolute;
-    max-width: 300px;
-    max-height: 100px;
+    max-width: 100%;
+    max-height: 140px;
 }

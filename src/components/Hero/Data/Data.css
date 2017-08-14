@@ -1,8 +1,10 @@
 .heroData {
-    border: 1px solid #F3AD19;
     max-width:  140px;
     width: 100%;
     text-align: center;
+}
+.dataBox {
+     border: 1px solid #EDD46E;
 }
 .dataBox p {
     margin: 0;
@@ -16,7 +18,7 @@
     margin-bottom: 10px;
 }
 .hr {
-    background: #F3AD19;
+    background: #EDD46E;
     width: 100%;
     height: 1px;
     margin: 10px 0;
