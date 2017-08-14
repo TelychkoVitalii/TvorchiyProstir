@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Hero from '../Hero/Hero';
 import styles from './App.css';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 class App extends React.Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class App extends React.Component {
             <div>
                 <Hero/>
                 <Header/>
+                <Footer/>
             </div>
         )
     }
