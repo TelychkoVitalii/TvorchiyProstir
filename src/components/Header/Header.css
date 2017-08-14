@@ -49,3 +49,8 @@
     margin: 0px 10px;
     padding: 10px 10px;
 } 
+
+.childList {
+    display: block;
+    margin-bottom: 5px;
+}
