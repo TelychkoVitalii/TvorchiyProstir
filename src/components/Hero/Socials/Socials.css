@@ -1,7 +1,8 @@
 .heroSocials {
-    background: #dadada;
-    max-width:  235px;
+    max-width:  135px;
     width: 100%;
     height: 50px;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
