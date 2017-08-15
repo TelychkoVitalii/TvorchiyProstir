@@ -13,21 +13,21 @@ const headerTitles = [
             {id: 1, name: 'Home', link: '/'}, 
             {id: 2, name: 'About', link: '/about', 
                                    extra: [
-                                       {name: 'Team', link: '/team'},
-                                       {name: 'Festival', link: '/festival'}
+                                       {name: 'Team', link: '/about/team'},
+                                       {name: 'Festival', link: '/about/festival'}
                                     ]},
             {id: 3, name: 'Events', link: '/events'},
             {id: 4, name: 'Get Involved', link: '/involved', 
                                           extra: [
-                                              {name: 'As Press', link: '/press'}, 
-                                              { name: 'As Partner', link: '/partner'}
+                                              {name: 'As Press', link: '/involved/press'}, 
+                                              { name: 'As Partner', link: '/involved/person'}
                                             ]},
-            {id: 5, name: 'Contact US', link: '/contact', 
+            {id: 5, name: 'Contact US', link: '/contactus', 
                                         extra: [
-                                            {name: 'Location', link: '/location'},
-                                            {name: 'FuckFuck', link: '/fuck'}
+                                            {name: 'Location', link: '/contactus/location'},
+                                            {name: 'FuckFuck', link: '/contactus/fuck'}
                                         ]},
-            {id: 6, name: 'Buy Tickets', link: '/tickets'}
+            {id: 6, name: 'Buy Tickets', link: '/checkout'}
         ];
 
 
