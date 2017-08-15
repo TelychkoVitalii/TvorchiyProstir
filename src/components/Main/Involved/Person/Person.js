@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styles from './About.css';
+import styles from './Person.css';
 
-class About extends React.Component {
+class Person extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -10,10 +10,10 @@ class About extends React.Component {
     render() {
         return (
             <div>
-                 <h1>About </h1>
+                 <h1>AS Person </h1>
             </div>
         )
     }
 }
 
-export default About;
+export default Person;

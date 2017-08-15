@@ -1,0 +1,8 @@
+.stickyWrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.mainWrapper {
+    flex: 1;
+}

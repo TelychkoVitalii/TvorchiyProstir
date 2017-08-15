@@ -14,11 +14,17 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className={styles.stickyWrapper}>
+                <header>
                     <Hero/>
                     <Header/>
+                </header>
+                <main className={styles.mainWrapper}>
                     <Main/>
+                </main>
+                <footer>
                     <Footer/>
+                </footer>
             </div>
         )
     }
