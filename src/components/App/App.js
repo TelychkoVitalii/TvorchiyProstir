@@ -22,21 +22,23 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className={styles.app}>
-            {this.state.loading ?
-                <img id="firstLogo" src="../../../../../assets/the_tvorchiy_prostir.jpg" alt="logo" /> :
-                <div>
-                    <Hero/>
-                    <Header/>
-                    <Main/>
-                    <div className={styles.footer}>
-                        <Footer/>
+            <div className={styles.stickyWrapper}>
+                {this.state.loading ?
+                    <img id="firstLogo" src="../../../../../assets/the_tvorchiy_prostir.jpg" alt="logo" /> :
+                    <div>
+                        <header>
+                            <Hero/>
+                            <Header/>
+                        </header>
+                        <main className={styles.mainWrapper}>
+                            <Main/>
+                        </main>
+                        <footer>
+                            <Footer/>
+                        </footer>
                     </div>
-                </div>    
-            }
             </div>
-        )
+        }
     }
-}
 
 export default App;

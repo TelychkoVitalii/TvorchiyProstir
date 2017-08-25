@@ -27,7 +27,7 @@ const headerTitles = [
                                             {name: 'Location', link: '/contacts/location'},
                                             {name: 'Find Us', link: '/contacts/find_us'}
                                         ]},
-            {id: 6, name: 'Buy Tickets', link: '/tickets'}
+            {id: 6, name: 'Buy Tickets', link: '/checkout'}
         ];
 
 

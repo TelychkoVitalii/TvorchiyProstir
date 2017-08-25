@@ -1,13 +1,8 @@
-.app {
-	max-width: 79.36507936507936%;
-	margin: 20px auto;
+.stickyWrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
-
-.footer {
-	height: 60px;
-	position: absolute;
-    left: 0;
-    bottom: -300px;
-    width: 100%;
-    background-color: #edeae6;
+.mainWrapper {
+    flex: 1;
 }

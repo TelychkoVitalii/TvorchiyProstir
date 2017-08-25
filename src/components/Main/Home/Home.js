@@ -31,8 +31,6 @@ class Home extends React.Component {
             <Slider {...settings}>
 		        {images}
 		    </Slider>
-        )
-    }
-}
+	}
 
 export default Home;
