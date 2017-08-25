@@ -10,22 +10,22 @@ import Home from '../Main/Home/Home';
 import About from '../Main/About/About';
 
 const headerTitles = [
-            {id: 1, name: 'Home', link: '/'}, 
-            {id: 2, name: 'About', link: '/about', 
+            {id: 1, name: 'Home', link: '/home'}, 
+            {id: 2, name: 'About Us', link: '/about', 
                                    extra: [
-                                       {name: 'Team', link: '/team'},
-                                       {name: 'Festival', link: '/festival'}
+                                       {name: 'Team', link: '/about/team'},
+                                       {name: 'Festival', link: '/about/festival'}
                                     ]},
             {id: 3, name: 'Events', link: '/events'},
-            {id: 4, name: 'Get Involved', link: '/involved', 
+            {id: 4, name: 'Involved', link: '/involved', 
                                           extra: [
-                                              {name: 'As Press', link: '/press'}, 
-                                              { name: 'As Partner', link: '/partner'}
+                                              {name: 'Press', link: '/involved/press'}, 
+                                              { name: 'Partners', link: '/involved/partner'}
                                             ]},
-            {id: 5, name: 'Contact US', link: '/contact', 
+            {id: 5, name: 'Contacts', link: '/contacts', 
                                         extra: [
-                                            {name: 'Location', link: '/location'},
-                                            {name: 'FuckFuck', link: '/fuck'}
+                                            {name: 'Location', link: '/contacts/location'},
+                                            {name: 'Find Us', link: '/contacts/find_us'}
                                         ]},
             {id: 6, name: 'Buy Tickets', link: '/tickets'}
         ];
@@ -35,49 +35,54 @@ class Header extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { isOpen: false, selected: null }
+        this.state = { 
+          isOpen: false, 
+          selected: null 
+        }
     }
-    handleClick(target) {
-        console.log(target)
+
+    handleEnter(target) {
         headerTitles.map( (el, index) => {
             ( el.id === target.id ) 
-            ? this.setState({ isOpen: !this.state.isOpen, selected: target.id })
+            ? this.setState({ isOpen: true, selected: target.id })
             : null
         })
     }
 
-    childHandleClicker(targetChild) {
-        console.log('Check Child', targetChild);
+    handleLeave() {
+      this.setState({ isOpen: false }); 
     }
 
-    
     render() {
-        const listItems = headerTitles.map((el, index) => 
-            <li onClick={this.handleClick.bind(this, el)} className={styles.listItem} key={index}>
-                    <Link to={el.link}>{el.name}</Link>
-                { el.extra 
-                    ? <ul> { (this.state.isOpen && this.state.selected === el.id)
-                            ? <li> { el.extra.map((el, index) =>  
-                                    <span className={styles.childList} 
-                                          key={index} 
-                                          onClick={this.childHandleClicker.bind(this, el.name)}>
-                                                        <Link to={el.link}>{el.name}</Link>
-                                    </span> )}
-                              </li>
-                            : null
-                            }
-                      </ul> 
+        const listItems = headerTitles.map((el, index) =>
+        <div> 
+            <p onMouseEnter={this.handleEnter.bind(this, el)} 
+                 onMouseLeave={this.handleLeave.bind(this, el)}
+                 className={styles.listItem} 
+                 key={index}>
+                  <Link to={el.link} className={styles.mainLink}>{el.name}</Link>
+                  {el.extra 
+                    ? <div className={styles.subBlock}>
+                      {(this.state.isOpen && this.state.selected === el.id)
+                          ? <div> { el.extra.map((el, index) =>  
+                              <span key={index} >
+                                <Link to={el.link} className={styles.subLink}>{el.name}</Link>
+                              </span>)}
+                            </div> 
+                          : null
+                        }
+                        </div> 
                     : null
                 }
-            </li>)
-        const routeLinks = headerTitles.map( (el, index ) => <Link key={index} to={el.link}>{el.name}</Link>)
+            </p>
+          </div>
+        )
         return (
-                <div className={styles.headerRow}>
-                    <ul className={styles.listItems}>
-                        { listItems }
-                    </ul>
-                    <hr/>
-                </div>
+          <div>
+            <div className={styles.listItems}>
+               { listItems }
+            </div>
+        </div>
         )
     }
 }

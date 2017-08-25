@@ -2,10 +2,7 @@ import React from 'react';
 import styles from './Sponsors.css';
 
 class Sponsors extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
+    
     render() {
         const sponsor = [
             {id: 1, url: '../../../../../assets/sponsors/sponsor_1.png', name: 'first'},

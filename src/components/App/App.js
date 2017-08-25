@@ -8,17 +8,32 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
 class App extends React.Component {
+
     constructor(props) {
         super(props);
+        this.state = { 
+          loading: true
+        }
     }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ loading: false }), 3500); 
+      }
 
     render() {
         return (
-            <div>
+            <div className={styles.app}>
+            {this.state.loading ?
+                <img id="firstLogo" src="../../../../../assets/the_tvorchiy_prostir.jpg" alt="logo" /> :
+                <div>
                     <Hero/>
                     <Header/>
                     <Main/>
-                    <Footer/>
+                    <div className={styles.footer}>
+                        <Footer/>
+                    </div>
+                </div>    
+            }
             </div>
         )
     }

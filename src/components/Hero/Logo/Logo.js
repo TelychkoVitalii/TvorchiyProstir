@@ -2,10 +2,7 @@ import React from 'react';
 import styles from './Logo.css';
 
 class Logo extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
+   
     render() {
         return (
             <div className={styles.heroLogo}>

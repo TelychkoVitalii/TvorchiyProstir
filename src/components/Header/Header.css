@@ -1,39 +1,36 @@
-.headerRow {
-    max-width: 79.36507936507936%; /* 100 / 1260 */
-    margin: 0 auto;
-}
 .listItems {
     display: flex;
     justify-content: space-around;
-    /* margin: 20px auto; */
     padding: 20px 0;
-    /* width: 1260px; */
     list-style: none;
     background-color: #edeae6;
 }
 
-.listItems li:before, .listItems li:after {
+.listItems p {
+    cursor: pointer;
+}
+
+.listItems p:before, .listItems p:after {
 	position: absolute;
     opacity: 0;
     width: 0%;
-    height: 1px;
+    height: 2px;
     content: '';
     background: black;
     transition: all 0.3s;
 }
 
-.listItems li:before {
+.listItems p:before {
 	left: 0px;
     top: 0px;
 }
 
-.listItems li:after {
+.listItems p:after {
 	right: 0px;
     bottom: 0px;
 }
 
-.listItems li:hover:before, .listItems li:hover:after
-{
+.listItems p:hover:before, .listItems p:hover:after {
     opacity: 1;
     width: 100%;
 }
@@ -44,13 +41,39 @@
     color: #000;
     text-transform: uppercase;	
     position: relative;
-    z-index: 0;
     cursor: pointer;
     margin: 0px 10px;
     padding: 10px 10px;
-} 
+}
 
-.childList {
+.mainLink {
     display: block;
-    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.subBlock {
+    width: 88px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 11px;
+    left: -2px;
+}
+
+.subBlock:hover {
+    transition: all 3s;
+}
+
+.subLink {
+    display: block;
+    padding: 5px 3px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.subLink:hover {
+    font-size: 26px;
 }

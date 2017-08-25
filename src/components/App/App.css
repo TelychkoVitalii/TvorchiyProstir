@@ -1,0 +1,13 @@
+.app {
+	max-width: 79.36507936507936%;
+	margin: 20px auto;
+}
+
+.footer {
+	height: 60px;
+	position: absolute;
+    left: 0;
+    bottom: -300px;
+    width: 100%;
+    background-color: #edeae6;
+}
