@@ -6,9 +6,6 @@ import {
 } from 'react-router-dom'
 import styles from './Header.css';
 
-import Home from '../Main/Home/Home';
-import About from '../Main/About/About';
-
 const headerTitles = [
             {id: 1, name: 'Home', link: '/home'}, 
             {id: 2, name: 'About Us', link: '/about', 
@@ -20,7 +17,7 @@ const headerTitles = [
             {id: 4, name: 'Involved', link: '/involved', 
                                           extra: [
                                               {name: 'Press', link: '/involved/press'}, 
-                                              { name: 'Partners', link: '/involved/partner'}
+                                              { name: 'Partners', link: '/involved/partners'}
                                             ]},
             {id: 5, name: 'Contacts', link: '/contacts', 
                                         extra: [

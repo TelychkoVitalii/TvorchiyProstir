@@ -11,11 +11,11 @@ import Festival from './About/Festival/Festival';
 import Events from './Events/Events';
 import Involved from './Involved/Involved';
 import Press from './Involved/Press/Press';
-import Person from './Involved/Person/Person';
+import Partners from './Involved/Partners/Partners';
 
 import Contact from './Contact/Contact';
 import OurLocation from './Contact/OurLocation/OurLocation';
-import Fuck from './Contact/Fuck/Fuck';
+import FindUs from './Contact/FindUs/FindUs';
 
 import Checkout from './Checkout/Checkout';
 
@@ -28,17 +28,16 @@ class Main extends React.Component {
                     <Route exact path='/home' component={Home} />
                     <Route path='/about/festival' component={Festival} />
                     <Route path='/about/team' component={Team} />
-                    <Route exact path='/' component={Home}/>
 
                     <Route path='/events' component={Events}/>
 
                     <Route exact path='/involved' component={Involved}/>
                     <Route path='/involved/press' component={Press}/>
-                    <Route path='/involved/person' component={Person}/>
+                    <Route path='/involved/partners' component={Partners}/>
 
-                    <Route exact path='/contactus' component={Contact}/>
-                    <Route path='/contactus/location' component={OurLocation}/>
-                    <Route path='/contactus/fuck' component={Fuck}/>
+                    <Route exact path='/contacts' component={Contact}/>
+                    <Route path='/contacts/location' component={OurLocation}/>
+                    <Route path='/contacts/find_us' component={FindUs}/>
 
                     <Route path='/checkout' component={Checkout}/>
                 </Switch>

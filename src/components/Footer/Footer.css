@@ -1,17 +1,8 @@
-.footerTitle {
-    font-family: Just Another Hand,cursive;
-    font-size: 34px;
-    border-bottom: 2px solid #EDD46E;
+.footer {
+    background-color: #edeae6;
+    height: 60px;
 }
-.footerTitle span:first-child {
-    color: #74D4A5;
-}
-.footerTitle span:nth-child(2) {
-    color: #EDD46E;
-}
-.footerTitle span:last-child {
-    color: #EC7D42;
-}
+
 .copyright {
 	padding: 10px 90px;
 	font-family: Just Another Hand,cursive;

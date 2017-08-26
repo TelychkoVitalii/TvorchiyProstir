@@ -17,17 +17,22 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        setTimeout(() => this.setState({ loading: false }), 3500); 
+        setTimeout(() => this.setState({ loading: false }), 5000); 
       }
 
     render() {
         return (
-            <div className={styles.stickyWrapper}>
+            <div>
                 {this.state.loading ?
-                    <img id="firstLogo" src="../../../../../assets/the_tvorchiy_prostir.jpg" alt="logo" /> :
-                    <div>
-                        <header>
-                            <Hero/>
+                    <div className={styles.bgcLogo}>
+                        <img className={styles.firstLogo} 
+                             src="../../../../../assets/the_tvorchiy_prostir.jpg" 
+                             alt="logo" />
+                    </div> :
+                    <div className={styles.initialStyle}>
+                        <div className={styles.stickyWrapper}>
+                            <header>
+                                <Hero/>
                             <Header/>
                         </header>
                         <main className={styles.mainWrapper}>
@@ -36,9 +41,12 @@ class App extends React.Component {
                         <footer>
                             <Footer/>
                         </footer>
+                        </div>
                     </div>
+                }
             </div>
-        }
+        )
     }
+}
 
 export default App;

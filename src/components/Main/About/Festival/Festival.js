@@ -7,9 +7,29 @@ class Festival extends React.Component {
     render() {
         return (
             <div>
-                 <p className={styles.aboutFest}>
-                     React is a JavaScript library, and so it assumes you have a basic understanding of the JavaScript language. If you don't feel very confident, we recommend refreshing your JavaScript knowledge so you can follow along more easily.
-                     We also use some of the ES6 syntax in the examples. We try to use it sparingly because it's still relatively new, but we encourage you to get familiar with arrow functions, classes, template literals, let, and const statements.
-                </p>
+                 <div className={styles.aboutFest}>
+                    <h2 className={styles.title}>Организация будущего!</h2>
+                    <h4 className={styles.title}>
+                        'Tvorchiy Prostir' - это команда молодых людей, которые создают необычные мероприятия в формате масштабных фестивалей!
+                            Основана-2016 год.
+                    </h4>
+                    В начале 2017 года общественная организация Tvorchiy Prostir задалась целью благоустроить и трансформировать локацию по адресу: ул. Телевизионная,3а  в нечто креативное – в пространство для отдыха, развития и вдохновения.
+                    На базе данного арт пространства 3 и 4 июня 2017г. успешно прошел фестиваль под одноименным названием «АРТІШОК».
+                    Собрав на своей локации более 6000 тысяч гостей, более 300 участников и партнеров, «АРТІШОК» завоевал почетное звание креативного,атмосферного и необычного фестиваля.
+                    <h4>Первая и единственная арт площадка под открытым небом в Кривом Роге.</h4>
+                    <ul className={styles.zoneList}>В дни фестиваля локация разделена на несколько тематических зон:
+                        <li>Urban market- зона с необычной торговлей.</li>
+                        <li>Food court- зона с едой и напитками от лучших заведений города.</li>
+                        <li>Sport- спортивные площадки (crossfit,стрельба из лука,слэклайн).</li>
+                        <li>Music- музыкальная площадка для stand-up шоу, для dj сетов и музыкальных групп из разных городов Украины.</li>
+                        <li>Beauty- зона где плетут косы,делают макиж и мехенди.</li>
+                        <li>Art- творческая площадка с необычными выставками,инсталляциями и фотозонами.</li>
+                        <li>Kids- площадка с аниматорами, мастер классами и развлечениями для детей.</li>
+                    </ul>
+                </div>
+            </div>
+            )
+    }
+}
 
 export default Festival;

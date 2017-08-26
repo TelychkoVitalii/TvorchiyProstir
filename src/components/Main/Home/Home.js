@@ -15,9 +15,9 @@ class Home extends React.Component {
 	    };
 
 	    const sliderImages = [
-	    	'https://s4.postimg.org/hr1jetjkt/geometria-61748968-photo.jpg',
-	    	'https://s4.postimg.org/ueharbyhp/geometria-61749154-photo.jpg',
-	    	'https://s4.postimg.org/c1gpgro0t/geometria-61749254-photo.jpg',
+	    	'https://s28.postimg.org/x1b191yrx/image.jpg',
+	    	'https://s28.postimg.org/o7k4rybt9/geometria-63023133-photo.jpg',
+	    	'https://s28.postimg.org/455uvkw99/geometria-63025464-photo.jpg',
 	    	'https://s4.postimg.org/ph3q67wil/geometria-61764100-photo.jpg'
 	    ];
 
@@ -31,6 +31,8 @@ class Home extends React.Component {
             <Slider {...settings}>
 		        {images}
 		    </Slider>
+		    )
 	}
+}
 
 export default Home;

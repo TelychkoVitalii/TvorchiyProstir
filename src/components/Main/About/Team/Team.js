@@ -15,6 +15,9 @@ class Team extends React.Component {
                     <p>1</p>
                     <p>2</p>
                </div>
+            </div>
+        )
     }
+}
 
 export default Team;

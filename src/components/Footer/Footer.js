@@ -6,7 +6,7 @@ class Footer extends React.Component {
    
     render() {
         return (
-            <div>
+            <div className={styles.footer}>
                <p className={styles.copyright}>© Tvorchiy Prostir 2017</p>
             </div>
         )

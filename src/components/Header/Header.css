@@ -50,6 +50,7 @@
     display: block;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .subBlock {
@@ -60,10 +61,6 @@
     left: -2px;
 }
 
-.subBlock:hover {
-    transition: all 3s;
-}
-
 .subLink {
     display: block;
     padding: 5px 3px;
@@ -72,6 +69,7 @@
     background-color: black;
     list-style: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .subLink:hover {
