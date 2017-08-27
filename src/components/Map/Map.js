@@ -8,7 +8,7 @@ class MapC extends React.Component {
         super(props);
         this.state = { 
                 center: { lat: 47.912925, lng: 33.417926 } ,
-                zoom: 12,
+                zoom: 18,
                 title: 'The Tvorchiy Prostir'
         };
     }
