@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styles from './OurLocation.css';
+import MapC from '../../../Map/Map';
 
 class OurLocation extends React.Component {
 
@@ -12,6 +13,7 @@ class OurLocation extends React.Component {
         return (
             <div>
                 <h4 className={styles.address}>Адрес: ул.Телевизионная,3а (напротив вьезда в гостиницу Дружба)</h4>
+                <MapC />
             </div>
         )
     }

@@ -11,7 +11,7 @@ class Home extends React.Component {
 	      slidesToShow: 1,
 	      slidesToScroll: 1,
 	      autoplay: true,
-	      autoplaySpeed: 4500
+	      autoplaySpeed: 2500
 	    };
 
 	    const sliderImages = [
