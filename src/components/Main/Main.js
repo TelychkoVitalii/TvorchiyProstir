@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import styles from './Main.css';
 import Home from './Home/Home';
 import About from './About/About';
@@ -20,7 +20,17 @@ import FindUs from './Contact/FindUs/FindUs';
 import Checkout from './Checkout/Checkout';
 
 class Main extends React.Component {
-   
+    constructor(props) {
+        super(props);
+        this.state = { 
+          afterLoader: false
+        }
+    }
+    // Need to redirect after loader finished / from / to /home
+    componentDidMount() {
+        setTimeout(() => this.setState({ afterLoader: true }), 225); 
+    }
+
     render() {
         return (
             <div className={styles.mainRow}>
@@ -41,6 +51,8 @@ class Main extends React.Component {
 
                     <Route path='/checkout' component={Checkout}/>
                 </Switch>
+                { this.state.afterLoader ? <Redirect from='/' to='/home' /> 
+                                         : <Route exact path='/home' component={Home} /> }
             </div>
         )
     }
