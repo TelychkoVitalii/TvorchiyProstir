@@ -1,10 +1,12 @@
 .listItems {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 5px 0;
     list-style: none;
     background-color: #edeae6;
     margin-bottom: 20px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .listItems p {
@@ -44,7 +46,7 @@
     position: relative;
     cursor: pointer;
     margin: 0px 10px;
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
 
 .mainLink {
